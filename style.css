@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* For small devices */
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.container {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("hero-image.jpg");
+  background-size: cover;
+  overflow: hidden;
+  background-position: center;
+  color: white;
+}
+
+.hero_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+}
+
+.hero_content_2 {
+  background-color: rgba(20, 20, 20, 0.555);
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  max-width: 20rem;
+}
+
+.hero_content_1 {
+  margin-bottom: 2rem;
+}
+
+h1,
+h2,
+h3 {
+  margin: 1rem;
+}
+
+input {
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  background-color: rgb(123, 201, 5);
+  border-style: none;
+  color: white;
+  cursor: pointer;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 2rem;
+}
+
+.info-card {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.sub-heading {
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+.avatar1 {
+  background-image: url("avatar/avatar1.jpg");
+  background-size: cover;
+  overflow: hidden;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+.avatar2 {
+  background-image: url("avatar/avatar2.jpg");
+  background-size: cover;
+  overflow: hidden;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+.name {
+  padding: 1rem;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+}
+
+.review-card {
+  margin-bottom: 3rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.five-star {
+  margin: 1rem 0;
+}
+
+footer {
+  background-color: rgba(58, 58, 58, 0.712);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 760px) {
+  .hero_content {
+    flex-direction: row;
+  }
+
+  .hero_content_1,
+  .hero_content_2 {
+    flex: 1 1 0;
+    margin: 3rem;
+  }
+
+  .info {
+    flex-direction: row;
+    padding: 5rem;
+  }
+
+  .info-card {
+    flex: 1 1 0;
+  }
+
+  .review {
+    flex-direction: row;
+    padding: 5rem;
+  }
+
+  .review-card {
+    flex: 1 1 0;
+  }
+}
